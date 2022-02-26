@@ -13,7 +13,7 @@ Install applications like XCode from Appstore and VSCode, Android Studio from th
 2. To use github from VSCode, you need to setup username and email in config. Config log will show you how after you try ro commit from VSCode
 
 ## VSCode
-Install packages to make VSCode better, for icons improvement (Material Design Icons) is a choise. For color sheme (One Dark Pro) is a good choise.
+Install packages to make VSCode better, for icons improvement (Material Design Icons) is a choise. For color sheme (One Dark Pro) is a good choise. Install language spesific packages like Flutter whihc will also install Dart. Python and Jupyter Notebook, for some reason it recommend you to install python3 via brew, but macOS already ships with python3? Not sure whats happening here.
 
 ## FVM
 Setup fvm for VSCode
