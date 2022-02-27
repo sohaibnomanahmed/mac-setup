@@ -15,6 +15,8 @@ Install applications like XCode from Appstore and VSCode, Android Studio from th
 ## VSCode
 Install packages to make VSCode better, for icons improvement (Material Design Icons) is a choise. For color sheme (One Dark Pro) is a good choise. Install language spesific packages like Flutter whihc will also install Dart. Python and Jupyter Notebook, for some reason it recommend you to install python3 via brew, but macOS already ships with python3? Not sure whats happening here.
 
+Also change the settings, to get there use [CMD+,] or press the wheel in the bottom left. Change the auto save to "After Delay", this should save the file after 1000ms, turn on word wrap and remove the check mark for Flutter Hot Restart On Save. Since you have auto save on this will trigger hot restart when ever you make a change, which is not wanted and by turning it off, you decide when you want to hot restart. 
+
 ## FVM
 Install a the stable release using
 ```
