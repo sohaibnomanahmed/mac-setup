@@ -15,9 +15,10 @@ brew upgrade python3
 ```
 
 ## Install required application
-Install applications like XCode from Appstore and VSCode, Android Studio from the webiste. To keep android studio uptodate install it through homebrew
+Install applications like XCode from Appstore and VSCode, Android Studio from the webiste. To keep Android Studio and VSCode upto date install it through homebrew
 ```
 brew install --cask android-studio
+brew install --cask visual-studio-code
 ```
 
 ## Git setup
