@@ -38,3 +38,23 @@ Setup fvm for VSCode with chnaging the settings file via CMD+SHIFT+P and choose 
   }
 }
 ```
+## Flutter
+To run your flutter project please read the documentation at: https://docs.flutter.dev/
+But generally after installing fvm and Xcode and Android Studio, run this command from your repo
+```
+fvm flutter doctor 
+```
+You probably need to complete the Xcode installation these 3 commands
+```
+sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+sudo xcodebuild -runFirstLaunch
+sudo gem install cocoapods
+```
+And to complete the Android Studio installment use these commands
+```
+
+```
+To connect to an android device open Andorid Studio and create a Virtual emulator, for iOS run the command
+```
+open -a Simulator
+```
