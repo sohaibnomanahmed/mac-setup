@@ -15,7 +15,10 @@ brew upgrade python3
 ```
 
 ## Install required application
-Install applications like XCode from Appstore and VSCode, Android Studio from the webiste
+Install applications like XCode from Appstore and VSCode, Android Studio from the webiste. To keep android studio uptodate install it through homebrew
+```
+brew install --cask android-studio
+```
 
 ## Git setup
 1. Get an access token from the github.com website for your account, Mac will for now auto remember the token so no need to keep a copy. This also will work for VSCode
