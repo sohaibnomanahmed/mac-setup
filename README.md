@@ -50,9 +50,9 @@ sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
 sudo xcodebuild -runFirstLaunch
 sudo gem install cocoapods
 ```
-And to complete the Android Studio installment use these commands
+And to complete the Android Studio installment use these commands after fixing missing command-line tools, the solution is here: https://stackoverflow.com/questions/68236007/i-am-getting-error-cmdline-tools-component-is-missing-after-installing-flutter
 ```
-
+fvm flutter doctor --android-licenses
 ```
 To connect to an android device open Andorid Studio and create a Virtual emulator, for iOS run the command
 ```
