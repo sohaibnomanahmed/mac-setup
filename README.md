@@ -60,3 +60,7 @@ To connect to an android device open Andorid Studio and create a Virtual emulato
 ```
 open -a Simulator
 ```
+To create a new project remember to add the desired package name, so you dont need to change it later s example.com is not useable
+```
+fvm flutter create --org com.yourdomain appname
+```
