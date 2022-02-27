@@ -20,6 +20,7 @@ Install applications like XCode from Appstore and VSCode, Android Studio from th
 brew install --cask android-studio
 brew install --cask visual-studio-code
 ```
+If issues updating cask occurs red the following: https://stackoverflow.com/questions/31968664/upgrade-all-the-casks-installed-via-homebrew-cask
 
 ## Git setup
 1. Get an access token from the github.com website for your account, Mac will for now auto remember the token so no need to keep a copy. This also will work for VSCode
