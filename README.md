@@ -3,7 +3,7 @@ My personal Mac setup
 
 ## Install Homebrew
 can be installed from: https://brew.sh
-Then install wget as described at the website and maybe flutter via fvm docs: https://fvm.app. Flutter uses analytics, not sure how to remove them from fvm.
+Then install wget as described at the website and maybe flutter via fvm docs: https://fvm.app.
 Also to not mess up the python2 and python3 versions on the mac, we can install python3 throgh homebrew and keep it updated to the latest version.
 ```
 brew install python3
@@ -35,6 +35,10 @@ Also change the settings, to get there use [CMD+,] or press the wheel in the bot
 Install a the stable release using
 ```
 fvm install stable
+```
+To remove analytics from a spesific version installed run the following command
+```
+/Users/sohaibahmed/fvm/versions/<VERSION>/bin/flutter config --no-analytics
 ```
 If you have a repo created without fvm, go to that directory and use the command below or another version there, this will create a .fvm in the directory
 ```
@@ -79,7 +83,7 @@ To create a new project remember to add the desired package name, so you dont ne
 ```
 fvm use <VERSION> --force
 ```
-Then create the project and later remove the .fvm folder from the folder above the project. Rember to call the fvm use VERSION inside the project folder.
+Then create the project and later remove the .fvm folder from the folder above the project. Rember to call the fvm use [VERSION] inside the project folder.
 ```
 fvm flutter create --org com.yourdomain appname
 ```
