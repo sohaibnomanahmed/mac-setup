@@ -79,7 +79,7 @@ To create a new project remember to add the desired package name, so you dont ne
 ```
 fvm use <VERSION> --force
 ```
-Then create the project and later remove the .fvm folder from the folder above the project. Rember to call the fvm use <VERSION> inside the project folder.
+Then create the project and later remove the .fvm folder from the folder above the project. Rember to call the fvm use VERSION inside the project folder.
 ```
 fvm flutter create --org com.yourdomain appname
 ```
