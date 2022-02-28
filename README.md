@@ -77,9 +77,16 @@ open -a Simulator
 ```
 To create a new project remember to add the desired package name, so you dont need to change it later s example.com is not useable. Also to create a project using fvm a version needs to be used. Since the versions are only in the project a work around is to use a version in the current folder with --force
 ```
-fvm use <VERSION_NUM> --force
+fvm use <VERSION> --force
 ```
-Then create the project and later remove the .fvm folder from the folder above the project. Rember to call the fvm use <VERSION_NUM> inside the project folder.
+Then create the project and later remove the .fvm folder from the folder above the project. Rember to call the fvm use <VERSION> inside the project folder.
 ```
 fvm flutter create --org com.yourdomain appname
+```
+
+Another option is to choose a global version, add that to the PATH, then create the project from the global version. The PATH should be added to your .zhrc file..
+```
+fvm global <VERSION>
+export PATH="$PATH:/Users/sohaibahmed/fvm/default/bin"
+flutter create appname
 ```
