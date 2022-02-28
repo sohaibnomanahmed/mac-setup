@@ -90,3 +90,8 @@ fvm global <VERSION>
 export PATH="$PATH:/Users/sohaibahmed/fvm/default/bin"
 flutter create appname
 ```
+
+Lastly add the cached flutter version created by fvm use to the .gitignore file. Since this is not auto done rn
+```
+.fvm/flutter_sdk
+```
