@@ -83,14 +83,12 @@ Then create the project and later remove the .fvm folder from the folder above t
 ```
 fvm flutter create --org com.yourdomain appname
 ```
-
-Another option is to choose a global version, add that to the PATH, then create the project from the global version. The PATH should be added to your .zhrc file..
+Another option is to choose a global version, add that to the PATH, then create the project from the global version. The PATH should be added to your .zshrc file.
 ```
 fvm global <VERSION>
 export PATH="$PATH:/Users/sohaibahmed/fvm/default/bin"
 flutter create appname
 ```
-
 Lastly add the cached flutter version created by fvm use to the .gitignore file. Since this is not auto done rn
 ```
 .fvm/flutter_sdk
