@@ -65,11 +65,13 @@ But generally after installing fvm and Xcode and Android Studio, run this comman
 ```
 fvm flutter doctor 
 ```
-You probably need to complete the Xcode installation these 3 commands
+You probably need to complete the Xcode installation these 3 commands, also sccording to this answer you should install cocoa pods using brew instead of gem: https://stackoverflow.com/questions/65570441/react-native-should-i-install-cocoapods-with-gem-or-homebrew
 ```
 sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
 sudo xcodebuild -runFirstLaunch
-sudo gem install cocoapods
+#sudo gem install cocoapods
+
+brew install cocoapods
 ```
 And to complete the Android Studio installment use these commands after fixing missing command-line tools, the solution is here: https://stackoverflow.com/questions/68236007/i-am-getting-error-cmdline-tools-component-is-missing-after-installing-flutter
 ```
