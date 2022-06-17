@@ -3,7 +3,12 @@ My personal Mac setup
 
 ## Install Homebrew
 can be installed from: https://brew.sh
-Then install wget as described at the website and maybe flutter via fvm docs: https://fvm.app.
+Then install wget as described at the website and maybe flutter via fvm docs: https://fvm.app. You can also install htop to get information about memory and cpu usage
+```
+brew install htop
+```
+
+## Python
 Also to not mess up the python2 and python3 versions on the mac, we can install python3 throgh homebrew and keep it updated to the latest version.
 ```
 brew install python3
@@ -30,6 +35,12 @@ If issues updating cask occurs red the following: https://stackoverflow.com/ques
 Install packages to make VSCode better, for icons improvement (Material Design Icons) is a choise. For color sheme (One Dark Pro) is a good choise. Install language spesific packages like Flutter whihc will also install Dart. Python and Jupyter Notebook.
 
 Also change the settings, to get there use [CMD+,] or press the wheel in the bottom left. Change the auto save to "After Delay", this should save the file after 1000ms, turn on word wrap and remove the check mark for Flutter Hot Restart On Save. Since you have auto save on this will trigger hot restart when ever you make a change, which is not wanted and by turning it off, you decide when you want to hot restart. 
+
+## Development Folder
+Before creating projects its nice, to set up a Developer folder where you can structure your project. One idea could be two subfolders for work and personal projects. Make the developer folder in the home directory by
+```
+mkdir Developer
+```
 
 ## FVM
 Install a the stable release using
