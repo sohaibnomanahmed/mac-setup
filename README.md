@@ -7,8 +7,8 @@ Then install wget as described at the website and maybe flutter via fvm docs: ht
 ```
 brew install htop
 ```
-## Setup Autosuggestions for the terminal
-First install Oh-My-Zhs as described on their website: https://ohmyz.sh
+## Oh My Zsh
+First install Oh-My-Zsh as described on their website: https://ohmyz.sh
 Then add the the autosuggestions plugin by following the steps on their github: https://github.com/zsh-users/zsh-autosuggestions in the INSTALL.md file, you could install it from homebrew as well (https://formulae.brew.sh/formula/zsh-autosuggestions), but the github version seems cleaner as it adds it to the plugins.
 
 Find a suitable theme here https://travis.media/top-12-oh-my-zsh-themes-for-productive-developers/ previously have I choosen "simple"
