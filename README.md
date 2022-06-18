@@ -7,6 +7,9 @@ Then install wget as described at the website and maybe flutter via fvm docs: ht
 ```
 brew install htop
 ```
+## Setup Autosuggestions for the terminal
+First install Oh-My-Zhs as described on their website: https://ohmyz.sh
+Then add the the autosuggestions plugin by following the steps on their github: https://github.com/zsh-users/zsh-autosuggestions
 
 ## Python
 Also to not mess up the python2 and python3 versions on the mac, we can install python3 throgh homebrew and keep it updated to the latest version.
