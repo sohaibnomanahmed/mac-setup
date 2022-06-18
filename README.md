@@ -13,6 +13,13 @@ Then add the the autosuggestions plugin by following the steps on their github: 
 
 Find a suitable theme here https://travis.media/top-12-oh-my-zsh-themes-for-productive-developers/ previously have I choosen "simple"
 
+lastly remove the ls colors if wanted, this can be done in the .zshrc file by removing the comment for LSCOLORS lik this
+```
+# Uncomment the following line to disable colors in ls.
+DISABLE_LS_COLORS="true"
+```
+
+
 ## Python
 Also to not mess up the python2 and python3 versions on the mac, we can install python3 throgh homebrew and keep it updated to the latest version.
 ```
