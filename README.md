@@ -164,28 +164,10 @@ brew-activate() {
 	export PS1="($CACHE_DIR) "
 }
 
-# path_remove ()  { export PATH=`echo -n $PATH | awk -v RS=: -v ORS=: '$0 != "'$1'"' | sed 's/:$//'`; }
-# path_remove $1; export PATH="$PATH:$1";
 
-# brew-deactivate() {
-# 	if [ -z $1 ]; then 
-# 		echo "Usage: brew-deactivate [NAME]"
-# 		return 
-# 	fi
-# 	CACHE_DIR=$1
-# 	PATH=~/Developer/Netcompany/env/$CACHE_DIR/Homebrew/bin:$PATH
-
-# 	unset HOMEBREW_INSTALL_BADGE="🦍"
-# 	unset HOMEBREW_PREFIX="$HOME"
-# 	unset HOMEBREW_REPOSITORY="~/Developer/Netcompany/env/$CACHE_DIR/Homebrew"
-# 	# Cask
-# 	unset HOMEBREW_CASK_OPTS="--appdir=${HOME}/Applications"
-# 	# Completions
-# 	fpath=($HOMEBREW_REPOSITORY/share/zsh/site-functions $fpath)
-
-# 	PATH=$ZSH_CACHE_DIR/Homebrew/opt/openssl@1.1/bin:$PATH
-# 	unset PS1="($CACHE_DIR) "
-# }
+brew-deactivate() {
+	source ~/.zshrc
+}
 
 brew-delete-env() {
 	if [ -z $1 ]; then 
