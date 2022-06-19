@@ -172,4 +172,8 @@ brew-delete-env() {
 	CACHE_DIR=$1
 	rm -rf ~/Developer/Netcompany/env/$CACHE_DIR
 }
+
+if [ -z $CACHE_DIR ]; then
+	else PS1="($CACHE_DIR) %(!.%{$fg[red]%}.%{$fg[green]%})%~$(git_prompt_info)%{$reset_color%} "
+fi
 ```
