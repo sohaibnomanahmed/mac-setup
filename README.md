@@ -164,11 +164,6 @@ brew-activate() {
 	export PS1="($CACHE_DIR) "
 }
 
-
-brew-deactivate() {
-	source ~/.zshrc
-}
-
 brew-delete-env() {
 	if [ -z $1 ]; then 
 		echo "Usage: brew-delete-env [NAME]"
