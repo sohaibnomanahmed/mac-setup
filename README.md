@@ -130,7 +130,7 @@ Lastly add the cached flutter version created by fvm use to the .gitignore file.
 .fvm/flutter_sdk
 ```
 ## Java
-To make publishing keys for android, when you want to publish your app to app stores. Java is needed, to get java install it through brew with
+To make publishing keys for android, when you want to publish your app to app stores. Java is needed, to get java install it through brew steps are from this stie: https://mkyong.com/java/how-to-install-java-on-mac-osx/
 ```
 brew install java
 sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
