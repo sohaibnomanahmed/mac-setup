@@ -3,10 +3,14 @@ My personal Mac setup
 
 ## Install Homebrew
 can be installed from: https://brew.sh
-Then install wget as described at the website and maybe flutter via fvm docs: https://fvm.app. You can also install htop to get information about memory and cpu usage
+Then install wget as described at the website and maybe flutter via fvm docs: https://fvm.app. Activity Monitor can be used to monitor the system htop is not needed.
+
+To update packages use
 ```
-brew install htop
+brew update
+brew upgrade
 ```
+
 ## Oh-My-Zsh
 First install Oh-My-Zsh as described on their website: https://ohmyz.sh
 Then add the the autosuggestions plugin by following the steps on their github: https://github.com/zsh-users/zsh-autosuggestions in the INSTALL.md file, you could install it from homebrew as well (https://formulae.brew.sh/formula/zsh-autosuggestions), but the github version seems cleaner as it adds it to the plugins.
@@ -21,15 +25,18 @@ DISABLE_LS_COLORS="true"
 
 
 ## Python
-Also to not mess up the python2 and python3 versions on the mac, we can install python3 throgh homebrew and keep it updated to the latest version.
+Also to not mess up the python2 and python3 versions on the mac, we can install python3 throgh pyenv. The reason on why and how to use pyenv instead of homebrew is stated in a later answer here: https://stackoverflow.com/questions/60298514/how-to-reinstall-python2-from-homebrew. Install the latest version listed here https://www.python.org/downloads/.
+
 ```
-brew install python3
+brew install pyenv
+pyenv install --list
+pyenv install <latest-version>
+
+pyenv global <latest-version>
+
+PATH=$(pyenv root)/shims:$PATH
 ```
-To update
-```
-brew update
-brew upgrade python3
-```
+
 
 ## Install required application
 Install applications like XCode from Appstore and VSCode, Android Studio from the webiste. To keep Android Studio and VSCode upto date install it through homebrew
