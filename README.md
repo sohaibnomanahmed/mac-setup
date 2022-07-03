@@ -54,34 +54,6 @@ Before creating projects its nice, to set up a Developer folder where you can st
 mkdir Developer
 ```
 
-## FVM
-Install a the stable release using
-```
-fvm install stable
-```
-To remove analytics from a spesific version installed run the following command
-```
-/Users/sohaibahmed/fvm/versions/<VERSION>/bin/flutter config --no-analytics
-```
-If you have a repo created without fvm, go to that directory and use the command below or another version there, this will create a .fvm in the directory
-```
-fvm use stable
-```
-Setup fvm for VSCode with chnaging the settings file via CMD+SHIFT+P and choose "Open Settings (JSON)". Then copy paste this code, always chakc with the documentation to use the latest versions.
-```
-{
-  "dart.flutterSdkPath": ".fvm/flutter_sdk",
-  // Remove .fvm files from search
-  "search.exclude": {
-    "**/.fvm": true
-  },
-  // Remove from file watching
-  "files.watcherExclude": {
-    "**/.fvm": true
-  }
-}
-```
-
 ## Flutter
 To run your flutter project please read the documentation at: https://docs.flutter.dev/
 But generally after installing fvm and Xcode and Android Studio, run this command from your repo
@@ -127,53 +99,4 @@ To make publishing keys for android, when you want to publish your app to app st
 ```
 brew install java
 sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
-```
-
-# Multiple Environments
-Sometimes you need multiple environments, like working for a consultant company. Brew can be bloated and too much software can be downloaded. Currently I hvae two solutions for this, the first is to create a new user and install brew om the home directory for this user and use and add it to his PATH variables, then everything he installs is in hes own environment and the user can later be deleted. He will have his "own" mac in this regard more instructions for this approach can be found here: https://stackoverflow.com/questions/41840479/how-to-use-homebrew-on-a-multi-user-macos-sierra-setup
-
-The second solution is to create somekind of environment system for brew, the idea for this came from this reddit post: https://www.reddit.com/r/osx/comments/70pa7u/separate_homebrew_environments/. I then created script in the .zshrc file for for creating and activating environments for my work projects the code is beneath. The current solution for deactivating is closing and starting a new terminal, but for reverting the path maybe this article can help: https://stackoverflow.com/questions/370047/what-is-the-most-elegant-way-to-remove-a-path-from-the-path-variable-in-bash
-
-```
-brew-create-env() {
-	if [ -z $1 ]; then 
-		echo "Usage: brew-create-env [NAME]"
-		return 
-	fi
-	CACHE_DIR=$1
-	test -d ~/Developer/Netcompany/env/$CACHE_DIR/Homebrew || git clone https://github.com/Homebrew/brew.git ~/Developer/Netcompany/env/$CACHE_DIR/Homebrew
-}
-
-brew-activate() {
-	if [ -z $1 ]; then 
-		echo "Usage: brew-activate [NAME]"
-		return 
-	fi
-	CACHE_DIR=$1
-	PATH=~/Developer/Netcompany/env/$CACHE_DIR/Homebrew/bin:$PATH
-
-	export HOMEBREW_INSTALL_BADGE="🦍"
-	export HOMEBREW_PREFIX="$HOME"
-	export HOMEBREW_REPOSITORY="~/Developer/Netcompany/env/$CACHE_DIR/Homebrew"
-	# Cask
-	export HOMEBREW_CASK_OPTS="--appdir=${HOME}/Applications"
-	# Completions
-	fpath=($HOMEBREW_REPOSITORY/share/zsh/site-functions $fpath)
-
-	PATH=$ZSH_CACHE_DIR/Homebrew/opt/openssl@1.1/bin:$PATH
-	export PS1="($CACHE_DIR) "
-}
-
-brew-delete-env() {
-	if [ -z $1 ]; then 
-		echo "Usage: brew-delete-env [NAME]"
-		return 
-	fi
-	CACHE_DIR=$1
-	rm -rf ~/Developer/Netcompany/env/$CACHE_DIR
-}
-
-if [ -z $CACHE_DIR ]; then
-	else PS1="($CACHE_DIR) %(!.%{$fg[red]%}.%{$fg[green]%})%~$(git_prompt_info)%{$reset_color%} "
-fi
 ```
