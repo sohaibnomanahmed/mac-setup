@@ -3,7 +3,7 @@ My personal Mac setup
 
 ## Install Homebrew
 can be installed from: https://brew.sh
-Then install wget as described at the website and maybe flutter via fvm docs: https://fvm.app. Activity Monitor can be used to monitor the system htop is not needed.
+Then install wget as described at the website, Activity Monitor can be used to monitor the system htop is not needed.
 
 To update packages use
 ```
@@ -23,28 +23,21 @@ lastly remove the ls colors if wanted, this can be done in the .zshrc file by re
 DISABLE_LS_COLORS="true"
 ```
 
-
 ## Python
-Also to not mess up the python2 and python3 versions on the mac, we can install python3 throgh pyenv. The reason on why and how to use pyenv instead of homebrew is stated in a later answer here: https://stackoverflow.com/questions/60298514/how-to-reinstall-python2-from-homebrew. Install the latest version listed here https://www.python.org/downloads/.
+Also to not mess up the python2 and python3 versions on the mac, we can install python3 throgh pyenv. The reason on why and how to use pyenv instead of homebrew is stated in a later answer here: https://stackoverflow.com/questions/60298514/how-to-reinstall-python2-from-homebrew. Install the latest version listed here https://www.python.org/downloads/. I still dont really get the reason for this and therefore use brew instead.
 
 ```
-brew install pyenv
-pyenv install --list
-pyenv install <latest-version>
-
-pyenv global <latest-version>
-
-PATH=$(pyenv root)/shims:$PATH
+brew install python3
 ```
 
-
-## Install required application
+## Install required application and frameworks
 Install applications like XCode from Appstore and VSCode, Android Studio from the webiste. To keep Android Studio and VSCode upto date install it through homebrew
 ```
+brew install --cask flutter
 brew install --cask android-studio
 brew install --cask visual-studio-code
 ```
-If issues updating cask occurs red the following: https://stackoverflow.com/questions/31968664/upgrade-all-the-casks-installed-via-homebrew-cask
+If issues updating cask occurs read the following: https://stackoverflow.com/questions/31968664/upgrade-all-the-casks-installed-via-homebrew-cask. Also if need for package managers you have for flutter fvm docs: https://fvm.app.
 
 ## Git setup
 1. Get an access token from the github.com website for your account, Mac will for now auto remember the token so no need to keep a copy. This also will work for VSCode
