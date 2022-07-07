@@ -33,6 +33,7 @@ brew install python3
 ## Install required application and frameworks
 Install applications like XCode from Appstore and VSCode, Android Studio from the webiste. To keep Android Studio and VSCode upto date install it through homebrew
 ```
+brew install firebase-cli
 brew install --cask flutter
 brew install --cask android-studio
 brew install --cask visual-studio-code
