@@ -24,7 +24,7 @@ DISABLE_LS_COLORS="true"
 ```
 
 ## Python
-Also to not mess up the python2 and python3 versions on the mac, we can install python3 throgh pyenv. The reason on why and how to use pyenv instead of homebrew is stated in a later answer here: https://stackoverflow.com/questions/60298514/how-to-reinstall-python2-from-homebrew. Install the latest version listed here https://www.python.org/downloads/. I still dont really get the reason for this and therefore use brew instead.
+Also to not mess up the python2 and python3 versions on the mac, we can install python3 throgh pyenv. The reason on why and how to use pyenv instead of homebrew is stated in a later answer here: https://stackoverflow.com/questions/60298514/how-to-reinstall-python2-from-homebrew. Install the latest version listed here https://www.python.org/downloads/. I still dont really get the reason for this and therefore use brew instead. For node if it needs python2 for gyp, you can just donwload python2 from the website as it dont get updates anymore and brew is not needed.
 
 ```
 brew install python3
@@ -33,7 +33,6 @@ brew install python3
 ## Install required application and frameworks
 Install applications like XCode from Appstore and VSCode, Android Studio from the webiste. To keep Android Studio and VSCode upto date install it through homebrew
 ```
-brew install firebase-cli
 brew install --cask flutter
 brew install --cask android-studio
 brew install --cask visual-studio-code
@@ -59,7 +58,7 @@ mkdir Developer
 To run your flutter project please read the documentation at: https://docs.flutter.dev/
 But generally after installing fvm and Xcode and Android Studio, run this command from your repo
 ```
-fvm flutter doctor 
+flutter doctor 
 ```
 You probably need to complete the Xcode installation these 3 commands, also sccording to this answer you should install cocoa pods using brew instead of gem: https://stackoverflow.com/questions/65570441/react-native-should-i-install-cocoapods-with-gem-or-homebrew
 ```
@@ -71,7 +70,7 @@ brew install cocoapods
 ```
 And to complete the Android Studio installment use these commands after fixing missing command-line tools, the solution is here: https://stackoverflow.com/questions/68236007/i-am-getting-error-cmdline-tools-component-is-missing-after-installing-flutter
 ```
-fvm flutter doctor --android-licenses
+flutter doctor --android-licenses
 ```
 To connect to an android device open Andorid Studio and create a Virtual emulator, for iOS run the command
 ```
@@ -95,6 +94,16 @@ Lastly add the cached flutter version created by fvm use to the .gitignore file.
 ```
 .fvm/flutter_sdk
 ```
+
+You should also disable analytics and reporting... NEEDS TO BE WITTEN!
+
+## Firebase
+Follow the documentation to use firebase, relating to flutter its here: https://firebase.google.com/docs/flutter/setup?platform=web. The CLI can be installed through brew 
+
+```
+brew install firebase-cli
+```
+
 ## Java
 To make publishing keys for android, when you want to publish your app to app stores. Java is needed, to get java install it through brew steps are from this stie: https://mkyong.com/java/how-to-install-java-on-mac-osx/
 ```
