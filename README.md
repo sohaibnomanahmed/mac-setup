@@ -1,6 +1,15 @@
 # mac-setup
 My personal Mac setup
 
+## System Preferences
+* Dock
+** uncheck show recent applications in dock
+* Language & Region
+** add japanese, norwegian etc..
+** in keyboard preferences add it to menu bar and add caps lock switch
+* Trackpad
+** enable tap to click
+
 ## Install Homebrew
 can be installed from: https://brew.sh
 Then install wget as described at the website, Activity Monitor can be used to monitor the system htop is not needed.
