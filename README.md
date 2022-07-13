@@ -3,12 +3,12 @@ My personal Mac setup
 
 ## System Preferences
 * Dock
-** uncheck show recent applications in dock
+  * uncheck show recent applications in dock
 * Language & Region
-** add japanese, norwegian etc..
-** in keyboard preferences add it to menu bar and add caps lock switch
+  * add japanese, norwegian etc..
+  * in keyboard preferences add it to menu bar and add caps lock switch
 * Trackpad
-** enable tap to click
+  * enable tap to click
 
 ## Install Homebrew
 can be installed from: https://brew.sh
@@ -104,7 +104,12 @@ Lastly add the cached flutter version created by fvm use to the .gitignore file.
 .fvm/flutter_sdk
 ```
 
-You should also disable analytics and reporting... NEEDS TO BE WITTEN!
+You should also disable analytics and reporting for both dart and flutter, this can be done with
+```
+flutter config --no-analytics
+dart --disable-analytics
+```
+
 
 ## Firebase
 Follow the documentation to use firebase, relating to flutter its here: https://firebase.google.com/docs/flutter/setup?platform=web. The CLI can be installed through brew 
