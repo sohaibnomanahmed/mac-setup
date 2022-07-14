@@ -53,7 +53,7 @@ If issues updating cask occurs read the following: https://stackoverflow.com/que
 2. To use github from VSCode, you need to setup username and email in config. Config log will show you how after you try to commit from VSCode. Config email will also connect to your github account, or else it is anonymous.
 
 ## VSCode
-Install packages to make VSCode better, for icons improvement (Material Design Icons) is a choise. For color sheme (One Dark Pro) is a good choise. Install language spesific packages like Flutter whihc will also install Dart. Python and Jupyter Notebook.
+Install packages to make VSCode better, for icons improvement (Material Design Icons) is a choise. For color sheme (One Dark Pro) is a good choise. Install language spesific packages like Flutter whihc will also install Dart. Python and Jupyter Notebook. Gitlense give good access to git options.
 
 Also change the settings, to get there use [CMD+,] or press the wheel in the bottom left. Change the auto save to "After Delay", this should save the file after 1000ms, turn on word wrap and remove the check mark for Flutter Hot Restart On Save. Since you have auto save on this will trigger hot restart when ever you make a change, which is not wanted and by turning it off, you decide when you want to hot restart. 
 
