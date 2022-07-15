@@ -10,6 +10,9 @@ My personal Mac setup
 * Trackpad
   * enable tap to click
 
+## Mail
+Setup your mail in mail app if not iCloud
+
 ## Install Homebrew
 can be installed from: https://brew.sh
 Then install wget as described at the website, Activity Monitor can be used to monitor the system htop is not needed.
