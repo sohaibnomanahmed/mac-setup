@@ -72,6 +72,11 @@ But generally after installing fvm and Xcode and Android Studio, run this comman
 ```
 flutter doctor 
 ```
+You should also disable analytics and reporting for both dart and flutter, this can be done with
+```
+flutter config --no-analytics
+dart --disable-analytics
+```
 You probably need to complete the Xcode installation these 3 commands, also sccording to this answer you should install cocoa pods using brew instead of gem: https://stackoverflow.com/questions/65570441/react-native-should-i-install-cocoapods-with-gem-or-homebrew
 ```
 sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
@@ -88,31 +93,10 @@ To connect to an android device open Andorid Studio and create a Virtual emulato
 ```
 open -a Simulator
 ```
-To create a new project remember to add the desired package name, so you dont need to change it later s example.com is not useable. Also to create a project using fvm a version needs to be used. Since the versions are only in the project a work around is to use a version in the current folder with --force
+To create a new project remember to add the desired package name, so you dont need to change it later s example.com is not useable. 
 ```
-fvm use <VERSION> --force
+flutter create --org com.yourdomain appname
 ```
-Then create the project and later remove the .fvm folder from the folder above the project. Rember to call the fvm use [VERSION] inside the project folder.
-```
-fvm flutter create --org com.yourdomain appname
-```
-Another option is to choose a global version, add that to the PATH, then create the project from the global version. The PATH should be added to your .zshrc file.
-```
-fvm global <VERSION>
-export PATH="$PATH:/Users/sohaibahmed/fvm/default/bin"
-flutter create appname
-```
-Lastly add the cached flutter version created by fvm use to the .gitignore file. Since this is not auto done rn
-```
-.fvm/flutter_sdk
-```
-
-You should also disable analytics and reporting for both dart and flutter, this can be done with
-```
-flutter config --no-analytics
-dart --disable-analytics
-```
-
 
 ## Firebase
 Follow the documentation to use firebase, relating to flutter its here: https://firebase.google.com/docs/flutter/setup?platform=web. The CLI can be installed through brew 
