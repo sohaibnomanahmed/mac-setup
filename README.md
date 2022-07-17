@@ -13,6 +13,9 @@ My personal Mac setup
 ## Mail
 Setup your mail in mail app if not iCloud
 
+## Finder
+Add the home folder to finders left menu
+
 ## Install Homebrew
 can be installed from: https://brew.sh
 Then install wget as described at the website, Activity Monitor can be used to monitor the system htop is not needed.
@@ -27,7 +30,7 @@ brew upgrade
 First install Oh-My-Zsh as described on their website: https://ohmyz.sh
 Then add the the autosuggestions plugin by following the steps on their github: https://github.com/zsh-users/zsh-autosuggestions in the INSTALL.md file, you could install it from homebrew as well (https://formulae.brew.sh/formula/zsh-autosuggestions), but the github version seems cleaner as it adds it to the plugins.
 
-Find a suitable theme here https://travis.media/top-12-oh-my-zsh-themes-for-productive-developers/ previously have I choosen "simple"
+Find a suitable theme here https://travis.media/top-12-oh-my-zsh-themes-for-productive-developers/ previously have I choosen "simple". Now I made an arch theme which can be downloaded from this repo, donwload the file into ~/.oh-my-zsh/themes/ folder-
 
 lastly remove the ls colors if wanted, this can be done in the .zshrc file by removing the comment for LSCOLORS lik this
 ```
