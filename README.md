@@ -33,7 +33,7 @@ The size can be changed if wanted, to keep the same ratio 100:30, 110:33 or 120:
 An Alternative is Hyper: https://hyper.is
 
 ## WM
-Yabai can be used as an i3 replacement for windows manager for Mac more information is here: https://cbrgm.net/post/2021-05-5-setup-macos/
+Yabai can be used as an i3 replacement for windows manager for Mac more information is here: https://cbrgm.net/post/2021-05-5-setup-macos/, video instruction here: https://www.youtube.com/watch?v=JL1lz77YbUE
 
 ## Oh-My-Zsh
 First install Oh-My-Zsh as described on their website: https://ohmyz.sh
