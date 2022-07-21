@@ -32,6 +32,9 @@ The size can be changed if wanted, to keep the same ratio 100:30, 110:33 or 120:
 
 An Alternative is Hyper: https://hyper.is
 
+## WM
+Yabai can be used as an i3 replacement for windows manager for Mac more information is here: https://cbrgm.net/post/2021-05-5-setup-macos/
+
 ## Oh-My-Zsh
 First install Oh-My-Zsh as described on their website: https://ohmyz.sh
 Then add the the autosuggestions plugin by following the steps on their github: https://github.com/zsh-users/zsh-autosuggestions in the INSTALL.md file, you could install it from homebrew as well (https://formulae.brew.sh/formula/zsh-autosuggestions), but the github version seems cleaner as it adds it to the plugins.
