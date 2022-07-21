@@ -26,6 +26,10 @@ brew update
 brew upgrade
 ```
 
+## Terminal
+
+The size can be changed if wanted, to keep the same ratio 100:30, 110:33 or 120:36 works good. Also The information gather on the right side chekcboxes can be removed to not show them on the terminal statusbar. Also the vursor can be changed to underscore more Arch like if wanted.
+
 ## Oh-My-Zsh
 First install Oh-My-Zsh as described on their website: https://ohmyz.sh
 Then add the the autosuggestions plugin by following the steps on their github: https://github.com/zsh-users/zsh-autosuggestions in the INSTALL.md file, you could install it from homebrew as well (https://formulae.brew.sh/formula/zsh-autosuggestions), but the github version seems cleaner as it adds it to the plugins.
