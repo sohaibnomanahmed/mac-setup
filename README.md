@@ -44,6 +44,12 @@ lastly remove the ls colors if wanted, this can be done in the .zshrc file by re
 DISABLE_LS_COLORS="true"
 ```
 
+## Git
+To get more infromation about git in the terminal, you can use tig. Install with
+```
+brew install tig
+```
+
 ## Python
 Also to not mess up the python2 and python3 versions on the mac, we can install python3 throgh pyenv. The reason on why and how to use pyenv instead of homebrew is stated in a later answer here: https://stackoverflow.com/questions/60298514/how-to-reinstall-python2-from-homebrew. Install the latest version listed here https://www.python.org/downloads/. I still dont really get the reason for this and therefore use brew instead. For node if it needs python2 for gyp, you can just donwload python2 from the website as it dont get updates anymore and brew is not needed.
 
