@@ -66,17 +66,19 @@ brew install --cask visual-studio-code
 If issues updating cask occurs read the following: https://stackoverflow.com/questions/31968664/upgrade-all-the-casks-installed-via-homebrew-cask. Also if need for package managers you have for flutter fvm docs: https://fvm.app.
 
 ## Git
-1. Get an access token from the github.com website for your account, Mac will for now auto remember the token so no need to keep a copy. This also will work for VSCode
-2. To use github from VSCode, you need to setup username and email in config. Config log will show you how after you try to commit from VSCode. Config email will also connect to your github account, or else it is anonymous. Config can be sett for repos, globqal or system more information is given here: https://stackoverflow.com/questions/8801729/is-it-possible-to-have-different-git-configuration-for-different-projects. For projects the proccess is to navigate to the repository and register name and email
- ```
- git config user.name "FIRST_NAME LAST_NAME"
- git config user.email "MY_NAME@example.com"
- ```
- Note conditional replacements for diffeent companies can also be set in .gitconfig file more information is given is the second response from the previous link.
-3. To get more infromation about git in the terminal, you can use tig. Install with
- ```
- brew install tig
- ```
+Get an access token from the github.com website for your account, Mac will for now auto remember the token so no need to keep a copy. This also will work for VSCode
+
+To use github from VSCode, you need to setup username and email in config. Config log will show you how after you try to commit from VSCode. Config email will also connect to your github account, or else it is anonymous. Config can be sett for repos, globqal or system more information is given here: https://stackoverflow.com/questions/8801729/is-it-possible-to-have-different-git-configuration-for-different-projects. For projects the proccess is to navigate to the repository and register name and email
+```
+git config user.name "FIRST_NAME LAST_NAME"
+git config user.email "MY_NAME@example.com"
+```
+Note conditional replacements for diffeent companies can also be set in .gitconfig file more information is given is the second response from the previous link.
+ 
+To get more infromation about git in the terminal, you can use tig. Install with
+```
+brew install tig
+```
 
 ## VSCode
 Install packages to make VSCode better, for icons improvement (Material Design Icons) is a choise. For color sheme (One Dark Pro) is a good choise. Install language spesific packages like Flutter whihc will also install Dart. Python and Jupyter Notebook. Gitlense give good access to git options.
