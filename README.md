@@ -3,12 +3,14 @@ My personal Mac setup
 
 ## System Preferences
 * Dock
-  * uncheck show recent applications in dock
+  * Uncheck show recent applications in dock
 * Language & Region
-  * add japanese, norwegian etc..
-  * in keyboard preferences add it to menu bar and add caps lock switch
+  * Add japanese, norwegian etc..
+  * In keyboard preferences add it to menu bar and add caps lock switch
 * Trackpad
-  * enable tap to click
+  * Enable tap to click
+* Keyboard
+  * Under text section, disable auto correct automatically 
 
 ## Mail
 Setup your mail in mail app if not iCloud
@@ -52,6 +54,14 @@ To get more infromation about git in the terminal, you can use tig. Install with
 ```
 brew install tig
 ```
+
+Also to register the user thats making changes so the remote repository can show its the same person, add it in config. Config can be sett for repos, globqal or system more information is given here: https://stackoverflow.com/questions/8801729/is-it-possible-to-have-different-git-configuration-for-different-projects. For projects the proccess is to navigate to the repository and register name and email
+
+```
+git config user.name "FIRST_NAME LAST_NAME"
+git config user.email "MY_NAME@example.com"
+```
+Note conditional replacements for diffeent companies can also be set in .gitconfig file more information is given is the second response from the previous link.
 
 ## Python
 Also to not mess up the python2 and python3 versions on the mac, we can install python3 throgh pyenv. The reason on why and how to use pyenv instead of homebrew is stated in a later answer here: https://stackoverflow.com/questions/60298514/how-to-reinstall-python2-from-homebrew. Install the latest version listed here https://www.python.org/downloads/. I still dont really get the reason for this and therefore use brew instead. For node if it needs python2 for gyp, you can just donwload python2 from the website as it dont get updates anymore and brew is not needed.
