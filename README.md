@@ -8,8 +8,7 @@ Add the home folder to finders left menu
 * Dock
   * Uncheck show recent applications in dock
 * Language & Region
-  * Add japanese, norwegian etc..
-  * In keyboard preferences add it to menu bar and add caps lock switch
+  * Add English (US) if not there already
 * Trackpad
   * Enable tap to click
 * Keyboard
