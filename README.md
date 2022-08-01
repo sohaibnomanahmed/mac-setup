@@ -30,6 +30,11 @@ To update packages use
 brew update
 brew upgrade
 ```
+If the installation fails, you have a half installed product and need to remove an tap it again, more in this post: https://github.com/Homebrew/brew/issues/10368.
+```
+rm -fr $(brew --repo homebrew/core)  # because you can't `brew untap homebrew/core`
+brew tap homebrew/core
+```
 
 ## Terminal
 
