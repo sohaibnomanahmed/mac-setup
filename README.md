@@ -70,6 +70,7 @@ Install applications like XCode from Appstore and VSCode, Android Studio from th
 brew install --cask flutter
 brew install --cask android-studio
 brew install --cask visual-studio-code
+brew install --cask google-chrome
 ```
 If issues updating cask occurs read the following: https://stackoverflow.com/questions/31968664/upgrade-all-the-casks-installed-via-homebrew-cask. Also if need for package managers you have for flutter fvm docs: https://fvm.app.
 
