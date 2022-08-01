@@ -1,6 +1,9 @@
 # mac-setup
 My personal Mac setup
 
+## Finder
+Add the home folder to finders left menu
+
 ## System Preferences
 * Dock
   * Uncheck show recent applications in dock
@@ -10,13 +13,14 @@ My personal Mac setup
 * Trackpad
   * Enable tap to click
 * Keyboard
-  * Under text section, disable auto correct automatically 
+  * Under [text section], disable auto correct automatically 
+  * Under [input soruces], add Japanese Romaji and check use Caps lock to switch and Auto switch to documents input source
+
+## Icloud and Gmail
+Sign into Icloud in System preferences and Sign into Gmail account in Safari
 
 ## Mail
 Setup your mail in mail app if not iCloud
-
-## Finder
-Add the home folder to finders left menu
 
 ## Install Homebrew
 can be installed from: https://brew.sh
