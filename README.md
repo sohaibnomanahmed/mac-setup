@@ -94,7 +94,7 @@ Install packages to make VSCode better, for icons improvement (Material Design I
 
 Also change the settings, to get there use [CMD+,] or press the wheel in the bottom left. Change the auto save to "After Delay", this should save the file after 1000ms, it should now only hot reload when you save manually.
 
-turn on word wrap. 
+turn on word wrap in settigns. Also turn of show tabs in settings as you can use [CMD+P+P] to look for recently open files and navigate back to previous file. More on this at https://devdojo.com/tnylea/goto-previous-file-in-vscode#:~:text=I%20love%20using%20the%20command,This%20is%20great!
 
 ## Development Folder
 Before creating projects its nice, to set up a Developer folder where you can structure your project. One idea could be two subfolders for work and personal projects. Make the developer folder in the home directory by
