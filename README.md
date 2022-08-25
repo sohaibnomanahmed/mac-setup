@@ -91,7 +91,7 @@ brew install tig
 ```
 
 ## VSCode
-Install packages to make VSCode better, for icons improvement (Material Design Icons) is a choise. For color sheme (One Dark Pro) is a good choise. Install language spesific packages like Flutter whihc will also install Dart. Python and Jupyter Notebook. Gitlense give good access to git options.
+Install packages to make VSCode better, for icons improvement (Material Design Icons) is a choise. For color sheme (One Dark Pro or Rose Pine) is a good choise. Install language spesific packages like Flutter whihc will also install Dart. Python and Jupyter Notebook. Gitlense give good access to git options.
 
 Also change the settings, to get there use [CMD+,] or press the wheel in the bottom left. Change the auto save to "After Delay", this should save the file after 1000ms, it should now only hot reload when you save manually.
 
