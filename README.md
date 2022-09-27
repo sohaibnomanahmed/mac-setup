@@ -3,6 +3,7 @@ My personal Mac setup
 
 ## Finder
 Add the home folder to finders left menu
+Also go into preferances and choose Home folder as default location
 
 ## System Preferences
 * Dock
