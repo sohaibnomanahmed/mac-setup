@@ -41,8 +41,7 @@ brew tap homebrew/core
 
 The size can be changed if wanted, to keep the same ratio 100:30, 110:33 or 120:36 works good. Also The information gather on the right side chekcboxes can be removed to not show them on the terminal statusbar. Also the vursor can be changed to underscore more Arch like if wanted.
 
-An Alternative is Hyper: https://hyper.is
-The most liked theme right now is: shades-of-purple-hyper
+An Alternative is Warp: https://www.warp.dev
 
 ## WM
 Yabai can be used as an i3 replacement for windows manager for Mac more information is here: https://cbrgm.net/post/2021-05-5-setup-macos/, video instruction here: https://www.youtube.com/watch?v=JL1lz77YbUE
