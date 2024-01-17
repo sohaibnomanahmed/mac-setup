@@ -48,7 +48,7 @@ Yabai can be used as an i3 replacement for windows manager for Mac more informat
 
 ## Oh-My-Zsh
 First install Oh-My-Zsh as described on their website: https://ohmyz.sh
-Then add the the autosuggestions plugin by following the steps on their github: https://github.com/zsh-users/zsh-autosuggestions in the INSTALL.md file, you could install it from homebrew as well (https://formulae.brew.sh/formula/zsh-autosuggestions), but the github version seems cleaner as it adds it to the plugins.
+Then add the the autosuggestions plugin by following the steps on their github: https://github.com/zsh-users/zsh-autosuggestions in the INSTALL.md file, you could install it from homebrew as well (https://formulae.brew.sh/formula/zsh-autosuggestions), but the github version seems cleaner as it adds it to the plugins. Aslo install auto-highligting.
 
 Find a suitable theme here https://travis.media/top-12-oh-my-zsh-themes-for-productive-developers/ previously have I choosen "simple". Now I made an arch theme which can be downloaded from this repo, donwload the file into ~/.oh-my-zsh/themes/ folder-
 
@@ -90,12 +90,9 @@ To get more infromation about git in the terminal, you can use tig. Install with
 brew install tig
 ```
 
-## VSCode
-Install packages to make VSCode better, for icons improvement (Material Design Icons) is a choise. For color sheme (One Dark Pro or Rose Pine) is a good choise. Install language spesific packages like Flutter whihc will also install Dart. Python and Jupyter Notebook. Gitlense give good access to git options.
+## Android Studio
 
-Also change the settings, to get there use [CMD+,] or press the wheel in the bottom left. Change the auto save to "After Delay", this should save the file after 1000ms, it should now only hot reload when you save manually.
-
-turn on word wrap in settigns. Also turn of show tabs in settings as you can use [CMD+P+P] to look for recently open files and navigate back to previous file. More on this at https://devdojo.com/tnylea/goto-previous-file-in-vscode#:~:text=I%20love%20using%20the%20command,This%20is%20great!
+Now I use Android Studio for Flutter, så install Plugins like (Flutter, Flutter Enhancement, One Dark theme.. maybe ABD Idea). 
 
 ## Development Folder
 Before creating projects its nice, to set up a Developer folder where you can structure your project. One idea could be two subfolders for work and personal projects. Make the developer folder in the home directory by
