@@ -6,21 +6,18 @@ Add the home folder to finders left menu
 Also go into preferances and choose Home folder as default location
 
 ## System Preferences
-* Dock
+* Desktop & Dock
   * Uncheck show recent applications in dock
-* Language & Region
-  * Add English (US) if not there already
+* General -> Language & Region
+  * Add English (US) if not there already, also add Japanese - Romaji.
 * Trackpad
   * Enable tap to click
 * Keyboard
-  * Under [text section], disable auto correct automatically 
+  * Under [input section], disable Correct automatically 
   * Under [input soruces], add Japanese Romaji and check use Caps lock to switch and Auto switch to documents input source
 
-## Icloud and Gmail
+## iCloud and Gmail
 Sign into Icloud in System preferences and Sign into Gmail account in Safari
-
-## Mail
-Setup your mail in mail app if not iCloud
 
 ## Install Homebrew
 can be installed from: https://brew.sh
