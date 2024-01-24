@@ -38,6 +38,8 @@ brew tap homebrew/core
 
 The size can be changed if wanted, to keep the same ratio 100:30, 110:33 or 120:36 works good. Also The information gather on the right side chekcboxes can be removed to not show them on the terminal statusbar. Also the vursor can be changed to underscore more Arch like if wanted.
 
+Add zsh-autosuggestions from here https://formulae.brew.sh/formula/zsh-autosuggestions
+
 An Alternative is Warp: https://www.warp.dev
 
 ## WM
