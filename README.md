@@ -2,19 +2,18 @@
 My personal Mac setup
 
 ## Finder
-Add the home folder to finders left menu
+Add the Home folder to finders left menu and remove Recent
 Also go into preferances and choose Home folder as default location
 
 ## System Preferences
 * Desktop & Dock
   * Uncheck show recent applications in dock
 * General -> Language & Region
-  * Add English (US) if not there already, also add Japanese - Romaji.
+  * Add English (US) if not there already.
 * Trackpad
   * Enable tap to click
 * Keyboard
-  * Under [input section], disable Correct automatically 
-  * Under [input soruces], add Japanese Romaji and check use Caps lock to switch and Auto switch to documents input source
+  * Under [input section], disable Correct automatically, add Japanese Romaji and check use Caps lock to switch and Auto switch to documents input source
 
 ## iCloud and Gmail
 Sign into Icloud in System preferences and Sign into Gmail account in Safari
@@ -36,9 +35,9 @@ brew tap homebrew/core
 
 ## Terminal
 
-The size can be changed if wanted, to keep the same ratio 100:30, 110:33 or 120:36 works good. Also The information gather on the right side chekcboxes can be removed to not show them on the terminal statusbar. Also the vursor can be changed to underscore more Arch like if wanted.
+The size can be changed if wanted, to keep the same ratio 100:30, 110:33 or 120:36 works good. In settings -> Profile. Uncheck all options under title, so only Terminal remains. Also The information gather on the right side chekcboxes can be removed to not show them on the terminal statusbar. Also the vursor can be changed to underscore more Arch like if wanted.
 
-Add zsh-autosuggestions from here https://formulae.brew.sh/formula/zsh-autosuggestions
+Add zsh-autosuggestions from here https://formulae.brew.sh/formula/zsh-autosuggestions, follow instructions to make it work, need to add code in .zshrc.
 
 An Alternative is Warp: https://www.warp.dev
 
