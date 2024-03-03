@@ -1,4 +1,4 @@
-# mac-setup
+<!--# mac-setup
 My personal Mac setup
 
 ## Finder
